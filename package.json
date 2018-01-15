@@ -1,19 +1,39 @@
 {
   "name": "react-npm-scripts",
-  "version": "1.0.0",
-  "description": "pro-developer scripts to the react-npm package",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "version": "0.1.1",
+  "description": "scripts and configurations to the react-npm package",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/clayton-duarte/react-npm-scripts.git"
+  },
+  "main": "bin/react-npm-scripts.js",
+  "scripts": {
+    "start": "node index.js"
   },
   "author": "Clayton Duarte",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/clayton-duarte/react-npm-scripts/issues"
   },
-  "homepage": "https://github.com/clayton-duarte/react-npm-scripts#readme"
+  "homepage": "https://github.com/clayton-duarte/react-npm-scripts#readme",
+  "dependencies": {
+    "autoprefixer": "^7.2.5",
+    "chalk": "^2.3.0",
+    "cross-spawn": "^5.1.0",
+    "webpack": "^3.10.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.0.4",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.8",
+    "enzyme": "^3.3.0",
+    "jest": "^22.0.5",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^2.0.10",
+    "react": "^16.2.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1"
+  }
 }
