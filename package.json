@@ -1,0 +1,19 @@
+{
+  "name": "react-npm-scripts",
+  "version": "1.0.0",
+  "description": "pro-developer scripts to the react-npm package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clayton-duarte/react-npm-scripts.git"
+  },
+  "author": "Clayton Duarte",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clayton-duarte/react-npm-scripts/issues"
+  },
+  "homepage": "https://github.com/clayton-duarte/react-npm-scripts#readme"
+}
