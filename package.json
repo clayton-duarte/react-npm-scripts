@@ -1,15 +1,13 @@
 {
   "name": "react-npm-scripts",
-  "version": "0.1.1",
+  "version": "1.1.2",
   "description": "scripts and configurations to the react-npm package",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/clayton-duarte/react-npm-scripts.git"
   },
-  "main": "bin/react-npm-scripts.js",
-  "scripts": {
-    "start": "node index.js"
-  },
+  "main": "bin/index.js",
+  "scripts": {},
   "author": "Clayton Duarte",
   "license": "MIT",
   "bugs": {
@@ -18,22 +16,29 @@
   "homepage": "https://github.com/clayton-duarte/react-npm-scripts#readme",
   "dependencies": {
     "autoprefixer": "^7.2.5",
-    "chalk": "^2.3.0",
-    "cross-spawn": "^5.1.0",
-    "webpack": "^3.10.0",
     "babel-core": "^6.26.0",
     "babel-jest": "^22.0.4",
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "chalk": "^2.3.0",
+    "cross-spawn": "^5.1.0",
     "css-loader": "^0.28.8",
     "enzyme": "^3.3.0",
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
     "jest": "^22.0.5",
     "node-sass": "^4.7.2",
     "postcss-loader": "^2.0.10",
     "react": "^16.2.0",
+    "react-dev-utils": "^5.0.0",
     "sass-loader": "^6.0.6",
-    "style-loader": "^0.19.1"
+    "style-loader": "^0.19.1",
+    "webpack": "^3.10.0"
   }
 }

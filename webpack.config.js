@@ -1,28 +1,48 @@
+const eslintFormatter = require('react-dev-utils/eslintFormatter');
 const autoprefixer = require('autoprefixer');
 const dirname = process.argv[3].split('/');
-dirname.splice(-3, 3);
-const _path = dirname.join('/');
+dirname.splice(-1, 1);
+let _pathScripts = dirname.join('/');
+dirname.splice(-2, 2);
+const _pathRoot = dirname.join('/');
 
 module.exports = {
-    entry: _path + '/index.js',
+    entry: _pathRoot + '/index.js',
     target: 'node',
     output: {
-        path: _path + '/pack',
+        path: _pathRoot + '/pack',
         filename: 'module.js',
         libraryTarget: 'umd',
     },
+    resolve: {
+        extensions: ['.js', '.jsx']
+    },
     module: {
         rules: [{
-            test: /\.js$/,
+            test: /\.(js|jsx)$/,
+            enforce: 'pre',
             exclude: /node_modules/,
-            use: [{ 
+            use: [{
+                loader: require.resolve('eslint-loader'),
+                options: {
+                    configFile: _pathScripts + '/.eslintrc',
+                    formatter: eslintFormatter,
+                    eslintPath: require.resolve('eslint'),
+                    fix: true
+                }
+              }]
+        },{
+            test: /\.(js|jsx)$/,
+            exclude: /node_modules/,
+            use: [{
                 loader: 'babel-loader',
                 options: {
                     presets: [
-                        'react',
+                        "react",
+                        "env"
                     ]
                 }
-            }],
+            }]
         },{
             test: /\.(sass|scss|css)$/,
             use: [{ 
