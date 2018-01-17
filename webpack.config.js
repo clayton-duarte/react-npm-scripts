@@ -45,13 +45,10 @@ module.exports = {
             }]
         },{
             test: /\.(sass|scss|css)$/,
-            use: [{ 
-                loader: 'style-loader'
-            },{
-                loader: 'css-loader'
-            },{
-                loader: 'sass-loader'
-            },{
+            use: [
+                'style-loader',
+                'css-loader',
+            {
                 loader: 'postcss-loader',
                 options: {
                     indent: 'postcss',
@@ -66,7 +63,9 @@ module.exports = {
                         })
                     }
                 }
-            }],
+            },
+                'sass-loader'
+            ],
         }]
     }
 }
